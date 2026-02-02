@@ -1,0 +1,226 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: azure;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: "Raleway", sans-serif;
+    margin: 10px 0;
+}
+
+.Header {
+    padding: 32px 0;
+    text-align: center;
+}
+
+.Unknown {
+    background-color: black;
+    color: white;
+    padding: 2px 8px;
+}
+.w3-container,.w4-container{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.layout{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.FirstDiv {
+    width: 700px;
+}
+.First,.Blog{
+    width: 650px;
+}
+.Me {
+    width: 450px;
+    margin-left: 50px;
+}
+
+.First,
+.Blog,
+.Girl,
+.Posts,
+.Tags {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-top: 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.Button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.ReadMe {
+    margin: 15px 0;
+    padding: 12px 24px;
+    font-size: 14px;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+}
+
+.ReadMe:hover {
+    background-color: antiquewhite;
+}
+
+.Comment span {
+    background-color: black;
+    color: white;
+    padding: 3px 8px;
+    margin-left: 5px;
+}
+
+.Comment2 {
+    border-radius: 50%;
+}
+.name{
+    margin-left: 10px;
+}
+.Girl p {
+    padding: 10px;
+}
+
+.Posts {
+    padding: 16px 0;
+}
+
+.P {
+    background-color:aliceblue;
+    padding: 10px;
+}
+
+.Post {
+    border-top: 1px solid #ddd;
+}
+
+.WorkShop,
+.gondol,
+.skies,
+.rock {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.im {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.Work {
+    margin-left: 10px;
+}
+
+.Tags {
+    padding-bottom: 15px;
+}
+
+.tag {
+    background-color:aliceblue;
+    padding: 10px;
+}
+
+.travel {
+    background-color: black;
+    color: white;
+    padding: 6px 10px;
+    font-size: 16px;
+}
+
+.n {
+    background-color: darkgrey;
+    padding: 4px 8px;
+    margin: 4px;
+    display: inline-block;
+}
+
+.clone{
+    color:white ;
+}
+.prev button {
+    padding: 8px 16px;
+    margin: 10px;
+    cursor: pointer;
+}
+.previous {
+  pointer-events: none; /* Disables all pointer events */
+  cursor:not-allowed; /* Changes the cursor to indicate it's unclickable (optional, for better UX) */
+  opacity: 0.6; /* Grays out the button visually to signify its state (optional, for better UX) */
+}
+Footer {
+    background-color: black;
+    color: white;
+    margin-top: 40px;
+    padding: 30px 0;
+    /* text-align: center; */
+    width: 100%;
+    clear: both;
+    position: sticky;
+}
+.clone{
+    margin-left: 15px;
+}
+@media (max-width:320px){
+    .layout{
+        flex-direction: column;
+        padding: 0 10px;
+    }
+    .FirstDiv,
+    .First,
+    .Blog,.Me
+    {
+        width: 100%;
+        margin: 0;
+    }
+}
+@media (max-width:768px) {
+    .layout {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .FirstDiv,
+    .First,
+    .Blog {
+        width: 100%;
+        margin: 0;
+    }
+    .Me{
+        width: 100%;
+        padding: 0;
+        margin-left: 0;
+    }   
+}
+
+@media (max-width:1024px) {
+    .Header{
+        text-align: center;
+    }    
+    .FirstDiv,.Me{
+        width: 100%;
+    }
+}
